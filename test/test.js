@@ -1,6 +1,6 @@
 var named;
 function delete1(id) {
-alert("已刪除留言")
+console.log("已刪除資料")
 localStorage.removeItem(id);
 this.Storage.writeData();
 }
@@ -51,7 +51,7 @@ var i = localStorage.length - 1;
 i >= 1;
 i-- //效率更高的循環方法
 ) {
-alert("成功發言!")
+console.log("上傳成功!")
 data = localStorage.getItem(localStorage.key(i)).split("|");
 
 //dataHtml += "<p><span class=\"msg\">" + data[0] + "</span><span class=\"datetime\">" + data[1] + "</span><span>" + data[2]+"</span></p>";
@@ -75,7 +75,7 @@ if (localStorage.length > 0) {
 if (window.confirm("清空后不可恢復，是否確認清空？")) {
   localStorage.clear();
   this.writeData();
-  alert("清除成功")
+  console.log("清除成功")
 }
 } else {
 alert("沒有需要清空的數據！");
