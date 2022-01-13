@@ -1,7 +1,9 @@
 var named;
 function delete1(id) {
+alert("已刪除留言")
 localStorage.removeItem(id);
-this.Storage.writeData();}
+this.Storage.writeData();
+}
 function prom() {
   var name = prompt("請輸入您的名字", ""); //將輸入的內容賦給變量 name ，
   named = name;
