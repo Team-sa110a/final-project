@@ -10,11 +10,11 @@ function prom() {
 
   if (named != "" ) {
     //依照返還內容給回饋
-    alert("內容更改為"+named)
+    console.log(named)
     document.getElementById("shangtian").style.display = "none";
     document.getElementById("ritian").value = named;
   } else {
-    alert("更改為匿名模式")
+    console.log("匿名")
     document.getElementById("ritian").value = "匿名";
   }
 }
@@ -44,14 +44,14 @@ alert("請填寫您的留言！");
 },
 writeData: function () //輸出數據
 {
-
 var dataHtml = "",
 data = "";
 for (
 var i = localStorage.length - 1;
-i >= 0;
+i >= 1;
 i-- //效率更高的循環方法
 ) {
+alert("成功發言!")
 data = localStorage.getItem(localStorage.key(i)).split("|");
 
 //dataHtml += "<p><span class=\"msg\">" + data[0] + "</span><span class=\"datetime\">" + data[1] + "</span><span>" + data[2]+"</span></p>";
