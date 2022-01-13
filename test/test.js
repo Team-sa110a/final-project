@@ -48,7 +48,7 @@ var dataHtml = "",
 data = "";
 for (
 var i = localStorage.length - 1;
-i >= 0;
+i >= 1;
 i-- //效率更高的循環方法
 ) {
 alert("成功發言!")
