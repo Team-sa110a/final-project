@@ -20,9 +20,10 @@ https://templatemo.com/tm-508-power
         <link rel="stylesheet" href="css/templatemo_misc.css">
         <link rel="stylesheet" href="css/templatemo_style.css">
         <link rel="stylesheet" href="css/owl-carousel.css">
-
+        <script src="js/script.js"></script>
         <script src="js/vendor/modernizr-2.6.1-respond-1.1.0.min.js"></script>
         <script src="index.js"></script>
+        <script src= "test.js"></script>
         <style>
             
         * {
@@ -192,41 +193,8 @@ https://templatemo.com/tm-508-power
             
         </div>
      
-        <script >
-          //王博緯
-      var named;
-      function prom() {
-        var name = prompt("請輸入您的名字", ""); //將輸入的內容賦給變量 name ，
-        named = name;
-  
-        if (named != "" ) {
-          //依照返還內容給回饋
-          alert("內容更改為"+named)
-          document.getElementById("shangtian").style.display = "none";
-          document.getElementById("ritian").value = named;
-        } else {
-          alert("更改為匿名模式")
-          document.getElementById("ritian").value = "匿名";
-        }
-      }
-      var Storage = {
-        saveData: function () //
-        {
-          //沒輸入內容
-          var data = document.querySelector("#post textarea");
-          if (data.value = "") {
-            alert("無輸入內容");
-            location.href = "testfile.html"
-          } else {
-            alert("輸入的內容為"+ data.value)
-          }
-        },
-      };
-            
-        </script>
         
-
-
+        
         <div class="site-main" id="sTop">
             <div class="site-header">
                 <div class="main-header">
