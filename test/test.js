@@ -10,11 +10,11 @@ function prom() {
 
   if (named != "" ) {
     //依照返還內容給回饋
-    alert("內容更改為"+named)
+    console.log(named)
     document.getElementById("shangtian").style.display = "none";
     document.getElementById("ritian").value = named;
   } else {
-    alert("更改為匿名模式")
+    console.log("匿名")
     document.getElementById("ritian").value = "匿名";
   }
 }
