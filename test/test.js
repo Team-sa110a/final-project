@@ -10,7 +10,6 @@ function prom() {
 
   if (named != "") {
     //依照返還內容給回饋
-    console.log(named);
     document.getElementById("shangtian").style.display = "none";
     document.getElementById("ritian").value = named;
   } else {
@@ -51,6 +50,7 @@ var Storage = {
       i >= 1;
       i-- //效率更高的循環方法
     ) {
+      console.log("上傳成功!");
       data = localStorage.getItem(localStorage.key(i)).split("|");
       console.log(data);
       //dataHtml += "<p><span class=\"msg\">" + data[0] + "</span><span class=\"datetime\">" + data[1] + "</span><span>" + data[2]+"</span></p>";
@@ -74,7 +74,7 @@ var Storage = {
       if (window.confirm("清空后不可恢復，是否確認清空？")) {
         localStorage.clear();
         this.writeData();
-        alert("清除成功");
+        console.log("清除成功");
       }
     } else {
       alert("沒有需要清空的數據！");
